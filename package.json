@@ -1,0 +1,16 @@
+{
+  "name": "overriding-bootstrap4-theme",
+  "version": "1.0.0",
+  "description": "In this article, I will show you how to override the default Bootstrap theme with your own custom theme variables.",
+  "main": "index.js",
+  "keywords": [
+    "bootstrap",
+    "overriding",
+    "theming"
+  ],
+  "author": "Youssef Zidan",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
+}

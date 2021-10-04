@@ -1,0 +1,33 @@
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+// Adding/Overriding Colors
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "secondary": #ddc22b,
+    "tertiary": #e059c3,
+    "quaternary": #25a1a1,
+  )
+);
+
+// Overriding/Adding Spacers
+$spacers: map-merge(
+  $spacers,
+  (
+    10: $spacer * 10,
+  )
+);
+
+// Overriding/Adding Sizes
+$sizes: map-merge(
+  $sizes,
+  (
+    10: 10%,
+    90: 90%,
+  )
+);
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";
