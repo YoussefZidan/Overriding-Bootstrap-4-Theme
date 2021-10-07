@@ -1,26 +1,25 @@
-- [Bootstrap Theme Files](#bootstrap-theme-files)
-- [Overriding Bootstrap 4 Theme.](#overriding-bootstrap-4-theme)
+- [Bootstrap theme files](#bootstrap-theme-files)
+- [Overriding Bootstrap 4 theme](#overriding-bootstrap-4-theme)
+- [Results](#results)
 
-## Bootstrap Theme Files
+In this shot, we will show you how to override the default Bootstrap theme with our own custom theme variables.
 
-In this article, I will show you how to override the default Bootstrap theme with your own custom theme variables.
+## Bootstrap theme files
 
-First, we need to understand how **Bootstrap 4 theme** files work.
+First, we need to understand how Bootstrap 4 theme files work. So, after installing Bootstrap 4 via [NPM](https://www.npmjs.com/package/bootstrap)
 
-So, after installing Bootstrap 4 via [NPM](https://www.npmjs.com/package/bootstrap)
-
-```
+```terminal
 npm i bootstrap@4
 ```
 
-Navigate to **node_modules/bootstrap/scss/\_variables.scss** file.
+navigate to the **node_modules/bootstrap/scss/\_variables.scss** file.
 
 > We will not make our modifications inside this file we will just take a quick look to understand how Bootstrap works and then we will make our modification in a proper way.
 
-In this file, you will find every variable used in Bootstrap.
+In this file, we will find every variable used in Bootstrap.
 Scrolling down we will see some pre-defined color variables:
 
-\_variables.scss
+**_variables.scss**
 
 ```scss
 $blue: #007bff !default;
@@ -35,7 +34,7 @@ $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 ```
 
-And then it uses these variable with its theme variables:
+And then it uses the following variable with its theme variables:
 
 ```scss
 $primary: $blue !default;
@@ -67,7 +66,9 @@ $theme-colors: map-merge(
 );
 ```
 
-## Overriding Bootstrap 4 Theme.
+## Overriding Bootstrap 4 theme
+
+In your root .sass file
 
 ```scss
 // Required
@@ -102,3 +103,8 @@ $sizes: map-merge(
 // Bootstrap and its default variables
 @import "node_modules/bootstrap/scss/bootstrap";
 ```
+
+## Results
+
+![Colors](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w3oua2b46oxpwlgxr3n5.JPG)
+![Spacing and Sizes](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/l8nhg3ehzhi5kxvsbzvj.JPG)
